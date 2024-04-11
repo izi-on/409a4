@@ -1,0 +1,6 @@
+THIS FILE IS AUTO-GENERATED. EACH VALUE IS AN AVERAGE COMPUTED OVER 10 ITERATIONS
+i=0: Average Time = .02175 sec
+i=1: Average Time = .04335 sec
+i=2: Average Time = .02975 sec
+i=3: Average Time = .02240 sec
+i=4: Average Time = .01869 sec
