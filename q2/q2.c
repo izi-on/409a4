@@ -59,7 +59,6 @@ DFA_Node dfa3 = {.state = 3, .transitions = dfa3T, .num_transitions = 2};
 /* _______________________ */
 
 void initDfa() {
-  printf("building dfa");
   dfaStates[0] = &dfa0;
   dfaStates[1] = &dfa1;
   dfaStates[2] = &dfa2;
@@ -82,7 +81,6 @@ void initDfa() {
       dfaStates[i]->transitions[j].regex = regex;
     }
   }
-  printf("done building dfa");
 }
 
 void cleanUpDFA() {
@@ -199,9 +197,9 @@ int main(int argc, char *argv[]) {
   double elapsedTime = getElapsedTime(start, end);
 
   free(genStr);
-  printf("matches : %d\n", matches);
-
-  printf("matching took %f seconds to execute \n", elapsedTime);
+  printf("%s\n", genStr);
+  printf("%d\n", matches);
+  printf("%f\n", elapsedTime);
   cleanUpDFA();
   return 0;
 }
